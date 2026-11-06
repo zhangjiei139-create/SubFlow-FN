@@ -1,0 +1,10 @@
+# Public product documentation only. Keep application source and deployment data out.
+*
+!.gitignore
+!README.md
+!CHANGELOG.md
+!docs/
+!docs/*.md
+!.github/
+!.github/ISSUE_TEMPLATE/
+!.github/ISSUE_TEMPLATE/*.yml
