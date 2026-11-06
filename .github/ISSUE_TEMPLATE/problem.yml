@@ -1,0 +1,37 @@
+name: 使用问题
+description: 反馈扫描、搜索、字幕处理或界面问题
+title: "[问题] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请描述实际操作和结果。截图、日志请先去掉 API Key、密码、激活码、访问令牌、私人访问地址及不希望公开的路径。
+  - type: input
+    id: app_version
+    attributes:
+      label: SubFlow FN 版本
+      placeholder: 例如 0.1.94 预览版
+    validations:
+      required: true
+  - type: input
+    id: fnos_version
+    attributes:
+      label: 飞牛 fnOS 版本及设备架构
+      placeholder: 系统版本、x86 或 ARM
+  - type: textarea
+    id: steps
+    attributes:
+      label: 操作步骤与实际结果
+      description: 在哪个页面操作，期望什么，实际发生了什么？
+    validations:
+      required: true
+  - type: textarea
+    id: film
+    attributes:
+      label: 相关影片与目标语言
+      description: 涉及字幕时，提供片名、年份、发行版本及缺少的语言；不要填写完整私人路径。
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 提示、截图或日志片段
+      description: 提交前请检查并移除敏感信息。
